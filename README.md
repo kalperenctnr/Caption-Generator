@@ -9,4 +9,5 @@ Moreover, in order to feed image data to the RNN network, a CNN network is used 
 ![](description_images/steps.png)
 
 Figure 2: Training Steps
+
 In addition, there is an attention mechanism whose task is to search for a set of positions in a source where the most relevant information is concentrated while the model is trying to predict the next word. Hence, the less relevant parts of the input vector are given less weights which affect the state transitions in the decoder part of the model.
