@@ -4,6 +4,8 @@ The main task of this project is to create a caption generator network. Initiall
 Therefore, the image and the word data are encoded separately. They are introduced together in feed-forward network which creates multimodal layer architecture. In Injecting Architecture, even though there are variants of injecting architecture according to the step at which image data is injected, the general structure is that word and image data is fed into the RNN network together.
 ![](description_images/github.png)
 
+Figure 1: Injecting&Merge Architecture
+
 Moreover, in order to feed image data to the RNN network, a CNN network is used to extract features from images then these images are fed into the RNN network. We have passed all images from the CNN network and obtained the useful features at the layer before FC layers of the CNN. Since, we make use of the Injecting Architecture; these features are concatenated to embedding outputs of the corresponding words. At the RNN part, words are fed into the system one by one since they hit the last element the learning process is illustrated in the following figure:
 
 ![](description_images/steps.png)
